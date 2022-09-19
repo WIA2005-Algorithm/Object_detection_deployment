@@ -1,2 +1,4 @@
-# Shoes brand classification tensorflow python flask
+# Objecte_dec_deployment
+ Object detection deploymenmt with flask
+ 
  
