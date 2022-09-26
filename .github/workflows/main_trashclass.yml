@@ -60,4 +60,4 @@ jobs:
         with:
           app-name: 'trashclass'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_BE52137FC1634AAC8B347DBB5C82BB75 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_45D440823DE044BEAECD638E767046FA }}
