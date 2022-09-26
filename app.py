@@ -11,7 +11,7 @@ def index():
 @app.route('/predict' ,methods=['POST','GET'])
 
 def function():
-    class_names= ['Recyclable', 'Non_recyclable']
+    class_names= ['Non_recyclable', 'Recyclable']
     img_height = 180
     img_width = 180
     model = tf.keras.models.load_model('saved_model\my_model')
