@@ -1,0 +1,10 @@
+$schema: https://azuremlschemas.azureedge.net/latest/managedOnlineDeployment.schema.json
+name: default
+endpoint_name: object-detection
+model: azureml:object-detection-model@latest
+code_configuration:
+  code: ../scoring/
+  scoring_script: score.py
+environment: azureml:object-detection-env@latest
+instance_type: Standard_DS3_v2
+instance_count: 1

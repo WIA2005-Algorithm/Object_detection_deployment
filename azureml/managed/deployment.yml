@@ -1,0 +1,13 @@
+$schema: https://azuremlschemas.azureedge.net/latest/managedOnlineDeployment.schema.json
+name: default
+endpoint_name: object-detection
+model: azureml:object-detection-model@latest
+code_configuration:
+  code: ../scoring/
+  scoring_script: score.py
+environment: 
+  name: object-detection-env
+  conda_file: ../environment/conda.yml
+  image: mcr.microsoft.com/azureml/openmpi4.1.0-ubuntu20.04:latest
+instance_type: Standard_DS2_v2
+instance_count: 1

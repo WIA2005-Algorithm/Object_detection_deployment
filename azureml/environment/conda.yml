@@ -1,0 +1,12 @@
+name: model-env
+channels:
+  - conda-forge
+dependencies:
+  - python=3.10.6
+  - Pillow
+  - numpy
+  - pip
+  - pip:
+    - azureml-inference-server-http
+    - azureml-defaults
+    - tensorflow
